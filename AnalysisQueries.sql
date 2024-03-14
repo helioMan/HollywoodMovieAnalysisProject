@@ -51,7 +51,7 @@ FROM Movies m
 ORDER BY m.Rating DESC;
 
 
--- here is the inner join to rtrieve mvie dtails with Box Office Gross
+-- here is the inner join to retrieve movie dtails with Box Office Gross
 SELECT m.Title, m.ReleaseYear, m.Genre, b.DomesticGross, b.InternationalGross
 FROM Movies m
 INNER JOIN BoxOffice b ON m.MovieID = b.MovieID;
