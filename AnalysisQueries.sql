@@ -24,12 +24,12 @@ FROM Movies
 GROUP BY Genre;
 
 
--- this one is to get the oldest actor in the database
+-- oldest actor in the database
 SELECT * FROM Actors ORDER BY BirthYear ASC LIMIT 1;
 
 
--- all the movies directed by the legendary director Christopher Nolan
-SELECT * FROM Actors ORDER BY BirthYear ASC LIMIT 1;
+-- movies directed by christopher nolan
+SELECT * FROM Movies WHERE Director = 'Christopher Nolan';
 
 
 -- list of the actor who appeared in the most movies
